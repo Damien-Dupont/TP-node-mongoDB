@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cd backend && npm start && cd .. && cd frontend && npm start",
+    "close": "for loopi in {3000..5000}; do sudo lsof -Pi :$loopi; done"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose-unique-validator": "^3.1.0"
+  }
+}
